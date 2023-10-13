@@ -25,7 +25,7 @@ const ToDo= () =>{
             {
                 tasks.map((task,index)=>(
                     <li key={index}>
-                        {task}
+                        <p>{task}</p>
                         <button onClick={()=>deleteTask(index)}>Delete</button>
                     </li>
                 ))
