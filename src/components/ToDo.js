@@ -24,10 +24,13 @@ const ToDo= () =>{
            <ul>
             {
                 tasks.map((task,index)=>(
-                    <li key={index}>
-                        <p>{task}</p>
-                        <button onClick={()=>deleteTask(index)}>Delete</button>
-                    </li>
+                   
+                    <div className="list" key={index}>
+                       <li key={index}>
+                         <p>{task}</p>
+                       </li>
+                       <button onClick={()=>deleteTask(index)}>Delete</button>
+                    </div>
                 ))
             }
            </ul>
